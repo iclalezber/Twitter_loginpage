@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"lato", sans-serif ;
+}
+
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color:black;
+}
+
+.container {
+  height: 810px;
+  width: 85%;
+  display: flex;
+  
+}
+
+
+.leftbox {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background: url("background.png") ;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500%;
+  height: 100%;
+  color: #fff;
+
+  
+}
+
+.big-bird {
+  width: 70%;
+  position: center;
+  fill: #fff;
+  font-family: sans-serif;
+  stroke-width: 0.10px;
+  stroke: #fff;
+}
+.rightbox{
+  width: 300%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  margin-top: 25px;
+
+  
+}
+.rightbox span{
+  color:white;
+
+}
+.rightbox span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.small-bird {
+  width: 50px;
+  height: 50px;
+ padding-right: 100%;
+  fill: white;
+  font-family: "lato",sans-serif;
+}
+
+h1,
+h3 {
+  color: white;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: "lato", sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "lato", sans-serif;
+}
+
+.btn {
+  border: 1px solid white;
+  justify-content: center;
+  font-family: "lato", sans-serif;
+  margin-bottom: -15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 300px;
+  border-radius: 24px;
+  border-color: white;
+  display: flex;
+}
+
+.btn:hover {
+  background-color: #a9d8f89a;
+}
+
+.btn span {
+  margin-left: 8px;
+}
+.btn svg {
+  width: 5%;
+}
+.btn-createaccount{
+  border: 1px solid #1d9bf0;
+  align-items: center;
+  justify-content: center;
+  font-family: "lato", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 300%;
+  border-radius: 24px;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  background-color: #1d9bf0;
+}
+.btn-createaccount:hover{
+  background-color: #1d9bf0;
+  cursor: pointer;
+}
+
+
+.sign-in-btn{
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  font-family: "lato", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  background-color: black;
+}
+
+.sign-in-btn:hover{
+  background-color: #a9d8f89a;
+
+}
+.footers{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footers ul li a { 
+  text-decoration: none;
+  color: gray;
+}
+.footers li{
+  color: gray;
+}
+
+.footers ul li{
+  font-size: 13px;
+  margin: 12px;
+  list-style-type:none;
+}
+
+.footers ul  {
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footers ul li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+  }
+
+  .leftbox {
+    width: 100%; 
+
+  }
+
+  .big-bird {
+    max-width: 50%;
+  }
+
+  .rightbox {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+}
+
